@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #f4c8c8, #bfdbed);
+    z-index: -1;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 6vh;
+    align-items: center;
+}
+
+#logo{
+    grid-column: 2/3;
+    font-size: 22px;
+    color: #a02f2f;
+    font-family: 'Viga', sans-serif;
+}
+
+.borgir{
+    justify-self: end;
+}
+
+section{
+    display: flex;
+    height:85vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.ft img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headline{
+   position: absolute;
+   top: 70%; 
+   left: 0%;
+   font-size: 85px;
+   transform: translate(10%, 85%);
+   color: #a02f2f;
+   z-index: 3;
+   font-family: 'Viga', sans-serif;
+}
+
